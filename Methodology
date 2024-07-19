@@ -1,0 +1,20 @@
+***NMAP***
+ping -c 1 10.10.10.101
+
+ping = icmp trace (comprobar conectividad)
+
+nmap -p- --open -Pn -vvv 10.10.10.101 -oG allPorts
+
+-p- = allports
+--open = open ports 
+-Pn = No Host resolver
+-vvv = display info
+-oG = result mode
+
+nmap -sC -sV -p 23 10.10.10.101 -oN target
+
+-sC = scripts comun 
+-sV = version system
+-p = ports
+-oN = result mode
+
